@@ -1,0 +1,323 @@
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: -1.5rem auto 3rem;
+}
+
+/* Sponsorship Cards */
+.sponsorship-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.sponsorship-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.sponsorship-card.bronze .card-header {
+  background: linear-gradient(135deg, #CD7F32, #b8692c);
+}
+
+.sponsorship-card.silver .card-header {
+  background: linear-gradient(135deg, #C0C0C0, #a8a8a8);
+}
+
+.sponsorship-card.gold .card-header {
+  background: linear-gradient(135deg, #FFD700, #e6c200);
+}
+
+.sponsorship-card.platinum .card-header {
+  background: linear-gradient(135deg, #E5E4E2, #d0cfcc);
+}
+
+.card-header h3 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.price-range {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.frequency {
+  color: rgba(255,255,255,0.9);
+  margin: 0;
+}
+
+.card-body {
+  padding: 2rem;
+  flex: 1;
+}
+
+.card-body h4 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.card-body li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--background-light);
+  color: var(--text-dark);
+}
+
+.card-body li:last-child {
+  border-bottom: none;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+}
+
+.note-box {
+  background: #fff9e6;
+  border-left: 4px solid var(--primary-green);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.note-box p {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+/* Support Areas */
+.support-areas-section {
+  background-color: var(--background-light);
+}
+
+.support-area-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.support-area-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.area-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.support-area-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.support-area-card > p {
+  margin-bottom: 1.5rem;
+}
+
+.area-items {
+  list-style: none;
+  padding: 0;
+}
+
+.area-items li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-dark);
+}
+
+.area-items li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Ways to Contribute */
+.way-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border-top: 4px solid var(--primary-green);
+}
+
+.way-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.way-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.way-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.75rem;
+}
+
+/* Requirements */
+.requirements-section {
+  background-color: var(--background-light);
+}
+
+.requirements-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.requirement-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.req-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.req-text h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.req-text p {
+  margin: 0;
+}
+
+/* Benefits */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.benefit-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.benefit-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-card li {
+  padding: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-bottom: 1px solid var(--background-light);
+  color: var(--text-dark);
+}
+
+.benefit-card li:last-child {
+  border-bottom: none;
+}
+
+.benefit-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-green), var(--light-green));
+}
+
+.cta-box {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-box h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-box p {
+  color: var(--white);
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .requirement-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .req-text {
+    text-align: center;
+  }
+
+  .cta-box h2 {
+    font-size: 2rem;
+  }
+
+  .sponsorship-card {
+    margin-bottom: 2rem;
+  }
+}
